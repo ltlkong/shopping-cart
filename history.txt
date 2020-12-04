@@ -1,0 +1,84 @@
+    1  mkdir shopping-cart
+    2  cd shopping-cart/
+    3  git init
+    4  npm init
+    5  echo "# shopping-cart" >> README.md
+    6  git init
+    7  git add README.md
+    8  git commit -m "first commit"
+    9  git branch -M main
+   10  git remote add origin https://github.com/ltlkong/shopping-cart.git
+   11  git push -u origin main
+   12  npm i -save-dev gulp-postcss
+   13  npm i -save-dev gulp
+   14  ls
+   15  touch .gitignore
+   16  echo node_modules >> .gitignore 
+   17  echo dist >> .gitignore 
+   18  git status
+   19  mkdir src
+   20  mv css src
+   21  ls
+   22  mv js src
+   23  mv images src
+   24  ls
+   25  mv index.html src
+   26  ls
+   27  git status
+   28  rm .DS_Store
+   29  history
+   30  git add . 
+   31  git commit -m "init npm download gulp gulp-postcss "
+   32  code .
+   33  git diff
+   34  git add .
+   35  git diff
+   36  git status
+   37  git commit -m "require gulp plugin and postcss"
+   38  npm -save-dev cssnano
+   39  npm i -save-dev cssnano
+   40  npm i -save-dev gulp-sourcemaps gulp-concat gulp-imagemin
+   41  git status
+   42  git add .
+   43  git commit -m "download cssnano concat imageminify srcmaps"
+   44  code .
+   45  git status
+   46  git add .
+   47  git commit -m "modify gulpfile"
+   48  npm i -save-dev  postcss
+   49  git add . &&     git commit -m "install postcss"
+   50  code .
+   51  git add .
+   52  git commit -m "fix errors in gulpfile"
+   53  code .
+   54  rm -rf dist
+   55  code .
+   56  rm -rf dist
+   57  code .
+   58  git add .
+   59  git commit -m "make gulpfile work"
+   60  git push
+   61  git switch -C color-change
+   62  touch zcolor1.css zcolor2.css zcolor3.css
+   63  code .
+   64  mv *.css src
+   65  ls
+   66  cd src
+   67  code .
+   68  mv *.css css
+   69  cd ..
+   70  code .
+   71  git add .
+   72  git commit -m "change body nav info-box background color"
+   73  git switch main
+   74  git merge color-change 
+   75  git switch -C add-title
+   76  code .
+   77  git add . && git commit -m "add a title "courses" in the nav bar"
+   78  git log --oneline
+   79  git switch main
+   80  git merge add-title 
+   81  git branch -d add-title color-change 
+   82  git push
+   83  touch history.txt
+   84  history>history.txt

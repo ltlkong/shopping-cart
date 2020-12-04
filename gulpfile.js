@@ -15,11 +15,13 @@ function cssTask() {
 }
 
 function htmlTask() {
-  return src("src/*.html").pipe(dest("dist/html"));
+  return src("src/*.html").pipe(dest("dist"));
 }
 
 function jsTask() {
-  return src("src/js/*").pipe(dest("dist/js"));
+  return src("src/js/*")
+  .pipe(concat("all.js"))
+  .pipe(dest("dist/js"));
 }
 
 function imagesTask() {
